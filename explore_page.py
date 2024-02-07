@@ -5,7 +5,6 @@ import pickle
 import pandas as pd
 import numpy as np
 
-# Assuming you have the necessary functions and data loaded
 from predict_page import load_model
 
 data = load_model()
@@ -19,15 +18,12 @@ def show_explore_page():
 
     st.write("""### Explore housing price prediction trends""")
 
-    # Example: Display a histogram of predicted housing prices
     st.write(
         """
     #### Distribution of Predicted Housing Prices
     """
     )
 
-    # Assuming you have a function to get sample predictions
-    # Replace this with your actual data or exploration logic
     sample_data = pd.DataFrame({
         'Bathrooms': np.random.randint(1, 6, 100),
         'Bedrooms': np.random.randint(1, 6, 100),
